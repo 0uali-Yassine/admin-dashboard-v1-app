@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer  utilities {
+ 
+    .font {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      li{
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+        font-size: 15px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      li:hover{
+        background-color: rgba(223, 218, 218, 0.705);
+      }
+
+      th{
+        text-align: left;
+      }
+      tr{
+        height: 55px;
+        align-items: center;
+      }
+      td{
+        cursor: pointer;
+      }
+      .td{
+        margin-top: 14px;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .active{
+        background-color: green;
+      }
+      .pending{
+        background-color: orangered;
+      }
+      .passive{
+        background-color: gray;
+      }
+      
+     
+      @media only screen and (100px <= width <= 483px) {
+        #iconMenu{
+          display: block;
+        }
+
+        #sidebar{
+          display: none;
+        }
+       
+      }
+      @media only screen and (100px <= width <= 718px) {
+        #member_transaction{
+          flex-direction: column;
+          align-items: center;
+        }
+        #transaction{
+          width: 100%;
+        }
+      }
+      
+      @media only screen and (100px <= width <= 723px){
+        #sectionCreateUser{
+          flex-direction: column;
+          align-items: center;
+        }
+        #formCreateUser{
+          width: 100%;
+          height: 492px;
+          align-items: center;
+        }
+        #btn_createUser{
+          margin-top: 14px;
+        }
+      }
+
+      @media only screen and (100px <= width <= 906px){
+        #createProductDetails,#createProductChart{
+          width: 100%;
+        }
+        
+        #sectionCreateProduct{
+          width: 100%;
+        }
+        #sectionEditeUser,#sectionCreateProduct{
+          flex-direction: column;
+          align-items: center;
+        }
+        #sectionTwoEditeUser{
+          width: 100%;
+        }
+      }
+
+      /*#sectionEditeUser*/
+}
