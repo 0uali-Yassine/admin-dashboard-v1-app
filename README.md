@@ -26,7 +26,7 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/admin-dashboard-v1-app.git
+   git clone https://github.com/0uali-Yassine/admin-dashboard-v1-app.git
 
 2. Navigate to the project directory:
     ```bash
